@@ -129,14 +129,15 @@
             </div>
 
             <div class="form-field full">
-              <label for="masina">Mașină / model *</label>
-              <input id="masina" name="numar_inmatriculare" type="text" ="Ex: Audi A4, VW Golf, Mercedes Sprinter" required>
+              <label for="masina">Număr de înmatriculare *</label>
+              <input id="masina" name="numar_inmatriculare" type="text" placeholder="Ex: AR 01 ABC" required>
+              <small>Scrie numărul mașinii care trebuie ridicată.</small>
             </div>
 
             <div class="form-field full">
-              <label for="adresaRidicare">Adresă ridicare *</label>
-              <input id="adresaRidicare" name="adresa_ridicare" type="text" ="Stradă, număr, localitate, bloc/casă" required>
-              <small>Exemplu: Sebiș, Strada ..., nr. ..., lângă ...</small>
+              <label for="adresaRidicare">Adresă ridicare (opțional)</label>
+              <input id="adresaRidicare" name="adresa_ridicare" type="text" placeholder="Ex: Str. Crișului nr. 36, Sebiș">
+              <small>Poți completa adresa manual, dar recomandat este să apeși „Adaugă locația mea”.</small>
 
               <div class="location-inline-box">
                 <button class="btn btn-secondary" type="button" onclick="k9UseLocation()">Adaugă locația mea</button>
