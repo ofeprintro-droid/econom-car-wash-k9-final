@@ -1,0 +1,23 @@
+ECONOM CAR WASH K9 - SITE PENTRU VERCEL
+
+Acesta este site-ul pregătit pentru Vercel.
+
+Pași:
+1. Intră pe https://vercel.com/
+2. Loghează-te cu Google.
+3. Add New Project.
+4. Alege Upload / Import Project sau folosește Vercel CLI.
+5. Încarcă folderul dezarhivat sau conectează un repository GitHub.
+6. Site-ul pornește din index.html.
+
+Formular ridicare auto:
+- Pe Vercel nu există formulare native ca la Netlify.
+- Formularul a fost mutat pe FormSubmit și trimite cererile la: economk9@gmail.com
+- La prima programare/test, FormSubmit trimite un e-mail de activare pe economk9@gmail.com.
+- Trebuie apăsat linkul de activare din acel e-mail ca formularele să fie livrate.
+
+Telefon:
++40 740 229 161
+
+Adresă:
+Sebiș, Strada Crișului, nr. 36

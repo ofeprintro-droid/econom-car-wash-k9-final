@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridicare auto | Econom Car Wash K9</title>
+  <meta name="description" content="Econom Car Wash K9 - spălătorie auto în Sebiș.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="logo-header.jpg" alt="Logo Econom Car Wash K9">
+      <div class="brand-text">
+        <small>Econom</small>
+        <strong>Car Wash K9</strong>
+      </div>
+    </a>
+
+    <nav class="desktop-menu">
+      <a class="" href="index.html">Acasă</a><a class="" href="servicii.html">Servicii</a><a class="" href="preturi.html">Prețuri</a><a class="active" href="ridicare-auto.html">Ridicare auto</a><a class="" href="fidelizare.html">Fidelizare</a><a class="" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn btn-secondary" href="preturi.html">Vezi prețuri</a>
+      <a class="btn btn-secondary phone-button-dark" href="tel:+40740229161">Sună acum</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Deschide meniul" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="links">
+        <a class="" href="index.html">Acasă</a><a class="" href="servicii.html">Servicii</a><a class="" href="preturi.html">Prețuri</a><a class="active" href="ridicare-auto.html">Ridicare auto</a><a class="" href="fidelizare.html">Fidelizare</a><a class="" href="contact.html">Contact</a>
+      </div>
+      <div class="mobile-actions">
+        <a class="btn btn-secondary" href="preturi.html">Vezi prețuri</a>
+        <a class="btn btn-secondary phone-button-dark" href="tel:+40740229161">Sună acum</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Programare ridicare auto</p>
+        <h2>Ridicare auto de la domiciliul clientului</h2>
+        <p>Completează datele de mai jos, iar noi te contactăm pentru confirmare. Prețurile din formular includ 10 lei pentru deplasare: preluăm mașina de la client și o returnăm după finalizarea serviciilor.</p>
+      </div>
+
+      <div class="form-wrap">
+        <form class="booking-form reveal" name="ridicare-auto" method="POST" action="https://formsubmit.co/economk9@gmail.com"   >
+          <input type="hidden" name="form-name" value="ridicare-auto">
+          <input type="hidden" name="_subject" value="Programare ridicare auto - Econom Car Wash K9">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="succes.html">
+          <input type="hidden" id="coordonate" name="coordonate_gps">
+          <input type="hidden" id="linkHarta" name="link_google_maps">
+          <p class="honeypot">
+            <label>Nu completa acest câmp: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nume">Nume client *</label>
+              <input id="nume" name="nume" type="text" ="Ex: Popescu Andrei" required>
+            </div>
+
+            <div class="form-field">
+              <label for="telefon">Telefon *</label>
+              <input id="telefon" name="telefon" type="tel" ="Ex: 0740 000 000" required>
+            </div>
+
+            <div class="form-field">
+              <label for="dataDorita">Data dorită *</label>
+              <input id="dataDorita" name="data_dorita" type="date" required>
+            </div>
+
+            <div class="form-field">
+              <label for="oraDorita">Ora dorită *</label>
+              <input id="oraDorita" name="ora_dorita" type="time" required>
+            </div>
+
+            <div class="form-field">
+              <label for="tipVehicul">Tip vehicul *</label>
+              <select id="tipVehicul" name="tip_vehicul" required>
+                <option value="">Alege tipul vehiculului</option>
+                <option value="Mașină mică (limuzină)">Mașină mică (limuzină)</option>
+                <option value="Jeep / SUV">Jeep / SUV</option>
+                <option value="Camionetă">Camionetă</option>
+                <option value="Microbuz persoane">Microbuz persoane</option>
+                <option value="Microbuz 3 locuri + dubă">Microbuz 3 locuri + dubă</option>
+                <option value="Tractor / Buldo">Tractor / Buldo</option>
+                <option value="Motor">Motor</option>
+                <option value="ATV">ATV</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="serviciu">Serviciu dorit *</label>
+              <select id="serviciu" name="serviciu_dorit" required>
+                <option value="">Alege serviciul</option>
+                <option value="Spălare interior">Spălare interior</option>
+                <option value="Spălare exterior">Spălare exterior</option>
+                <option value="Interior + Exterior">Interior + Exterior</option>
+                <option value="Curățare tapițerie">Curățare tapițerie</option>
+                <option value="Alt serviciu / discutăm telefonic">Alt serviciu / discutăm telefonic</option>
+              </select>
+              <div id="pretServiciu" class="price-preview" style="display:none"></div>
+              <div class="payment-note">
+                <strong>Deplasare inclusă:</strong> prețul afișat include ridicarea mașinii de la client și returnarea ei după spălare.
+                <br><strong>Plata:</strong> se face la preluarea mașinii de la client.
+              </div>
+              <input type="hidden" id="pretEstimat" name="pret">
+            </div>
+
+            <div class="form-field full">
+              <label for="masina">Mașină / model *</label>
+              <input id="masina" name="masina_model" type="text" ="Ex: Audi A4, VW Golf, Mercedes Sprinter" required>
+            </div>
+
+            <div class="form-field full">
+              <label for="adresaRidicare">Adresă ridicare *</label>
+              <input id="adresaRidicare" name="adresa_ridicare" type="text" ="Stradă, număr, localitate, bloc/casă" required>
+              <small>Exemplu: Sebiș, Strada ..., nr. ..., lângă ...</small>
+
+              <div class="location-inline-box">
+                <button class="btn btn-secondary" type="button" onclick="k9UseLocation()">Adaugă locația mea</button>
+                <a class="btn btn-secondary btn-location-inline" id="linkHartaVizibil" target="_blank" style="display:none">Deschide locația detectată</a>
+                <small id="locatieStatus">Butonul trimite automat coordonatele și linkul Google Maps împreună cu formularul. Nu mai trebuie completat link separat.</small>
+              </div>
+            </div>
+
+            <div class="form-field full">
+              <label for="reper">Reper / indicații</label>
+              <input id="reper" name="reper_indicatii" type="text" ="Ex: poartă neagră, lângă magazin, curte interioară">
+            </div>
+
+            <div class="form-field full">
+              <label for="observatii">Observații</label>
+              <textarea id="observatii" name="observatii" ="Ex: cheia este la..., mașina este parcată în față, prefer să fiu sunat înainte etc."></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Confirmă programarea</button>
+          </div>
+
+          <p class="form-note">
+            Programarea este confirmată telefonic. Plata se face la preluarea mașinii de la client.
+          </p>
+        </form>
+
+        <aside class="location-helper reveal">
+          <div class="location-preview">
+            <p class="eyebrow">Cum funcționează</p>
+            <h3>Preluare și returnare</h3>
+            <p>Completezi adresa și poți adăuga locația exactă, pentru ca echipa să știe de unde trebuie preluată mașina. Mașina este preluată de la client și returnată după finalizarea serviciilor.</p>
+          </div>
+
+          <div class="note-box">
+            <strong>Important:</strong>
+            <p>După trimiterea cererii, echipa Econom Car Wash K9 te contactează telefonic pentru confirmarea programării.</p>
+          </div>
+
+          <div class="map-box">
+            <div>
+              <h3 style="font-size:28px;text-transform:uppercase;margin-bottom:10px">Econom Car Wash K9</h3>
+              <p>Sebiș, Strada Crișului, nr. 36</p>
+              <p style="color:#b8bec8;margin-top:10px">Pentru detalii rapide, sună direct la firmă.</p>
+              <br>
+              <a class="btn btn-secondary phone-button-dark" href="tel:+40740229161">Sună acum</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container footer-wrap">
+    <span>© Econom Car Wash K9</span>
+    <span>Sebiș, Strada Crișului, nr. 36</span>
+    <span>Telefon: +40 740 229 161</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
