@@ -86,11 +86,13 @@
             <div class="form-field">
               <label for="dataDorita">Data dorită *</label>
               <input id="dataDorita" name="data_dorita" type="date" required>
+              <small>Alege ziua în care dorești ridicarea mașinii.</small>
             </div>
 
             <div class="form-field">
               <label for="oraDorita">Ora dorită *</label>
               <input id="oraDorita" name="ora_dorita" type="time" required>
+              <small>Exemplu: 10:00 sau 15:30.</small>
             </div>
 
             <div class="form-field">
@@ -128,7 +130,7 @@
 
             <div class="form-field full">
               <label for="masina">Mașină / model *</label>
-              <input id="masina" name="masina_model" type="text" ="Ex: Audi A4, VW Golf, Mercedes Sprinter" required>
+              <input id="masina" name="numar_inmatriculare" type="text" ="Ex: Audi A4, VW Golf, Mercedes Sprinter" required>
             </div>
 
             <div class="form-field full">
@@ -139,7 +141,7 @@
               <div class="location-inline-box">
                 <button class="btn btn-secondary" type="button" onclick="k9UseLocation()">Adaugă locația mea</button>
                 <a class="btn btn-secondary btn-location-inline" id="linkHartaVizibil" target="_blank" style="display:none">Deschide locația detectată</a>
-                <small id="locatieStatus">Butonul trimite automat coordonatele și linkul Google Maps împreună cu formularul. Nu mai trebuie completat link separat.</small>
+                <small id="locatieStatus">Recomandat: apasă aici pentru a trimite locația exactă de ridicare prin Google Maps.</small>
               </div>
             </div>
 
